@@ -8,7 +8,7 @@ py_binary(
   name = "main",
   srcs = ["main.py"],
   deps = [
-    "//projects/calculator:calculator",
+    "//projects/python_calculator:calculator",
     requirement("Flask")
   ]
 )

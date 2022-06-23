@@ -1,4 +1,4 @@
-# Rules Python
+### Rules Python
 load("@bazel_tools//tools/build_defs/repo:http.bzl", "http_archive")
 
 http_archive(
@@ -8,7 +8,7 @@ http_archive(
     url = "https://github.com/bazelbuild/rules_python/archive/refs/tags/0.9.0.tar.gz",
 )
 
-# Pyton
+### Pyton
 load("@rules_python//python:repositories.bzl", "python_register_toolchains")
 
 python_register_toolchains(
@@ -22,7 +22,6 @@ load("@python3_9//:defs.bzl", "interpreter")
 
 load("@rules_python//python:pip.bzl", "pip_parse")
 
-# Pip deps
 load("@rules_python//python:pip.bzl", "pip_install")
 
 pip_install(
